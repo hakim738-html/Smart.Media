@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع سمارت ميديا للحجز</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+
+    <div class="particles-container" id="particles-container"></div>
+
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="brand-logo">
+                    <div class="logo-img">
+                        <img src="photo/1.jpg" alt="سمارت ميديا">
+                    </div>
+                    <span>سمارت ميديا</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-logo">
+                        <img src="photo/1.jpg" alt="سمارت ميديا" loading="eager" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                    </div>
+                    <h1 class="brand-name">Smart Media</h1>
+                    
+                    <div class="social-links" style="margin-top: 15px;">
+                        <a href="https://youtube.com/@736206408" class="social-link youtube-1" target="_blank">    
+                            <i class="fab fa-youtube">1</i> 
+                        </a>
+                        <a href="https://youtube.com/@smart77media" class="social-link youtube-1" target="_blank">    
+                            <i class="fab fa-youtube">2</i> 
+                        </a>
+                        <a href="https://youtube.com/@smart73media" class="social-link youtube-1" target="_blank">    
+                            <i class="fab fa-youtube">3</i> 
+                        </a>
+                    </div>
+                    
+                    <p class="hero-subtitle">تصوير فاخر للأعراس والمناسبات</p>
+                    <p class="hero-description">نحن نقدم خدمات تصوير احترافية تلبي أعلى معايير الجودة، لالتقاط أجمل اللحظات في مناسباتك الخاصة. فريق محترف مع سنوات من الخبرة في تصوير الأعراس والحفلات.</p>
+                    <div class="button-group">
+                        <button class="secondary-button" onclick="scrollToSection('booking')">احجز جلسة تصوير</button>
+                        <button class="secondary-button" onclick="scrollToSection('gallery')">استعرض الأعمال</button>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="hero-bg"></div>
+                    <div class="camera-container">
+                        <div class="camera-img">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title" id="services-title">خدماتنا</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3>تصوير الأعراس</h3>
+                    <p>خدمة تصوير متكاملة لحفل زفافك، مع فريق تصوير محترف.</p>
+                    <button class="secondary-button" onclick="scrollToSection('booking')">احجز الخدمة</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>تصوير شخصي</h3>
+                    <p>تصوير شخصي للضيوف لضمان أفضل خدمة وأجمل الذكريات.</p>
+                    <button class="secondary-button" onclick="scrollToSection('booking')">احجز الخدمة</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section-title" id="team-title">طاقم التصوير</h2>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="photo/7.jpg" alt="حكيم">
+                        <div class="member-overlay">
+                            <div class="member-info">
+                                <h3>حكيم</h3>
+                                <p>مصور رئيسي ومخرج فني</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <h3>حكيم</h3>
+                        <span class="role">مصور رئيسي ومخرج فني</span>
+                        <p>المسؤول عن الأجهزة والبث المباشر والإنتاج</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="photo/6.jpg" alt="باسم">
+                        <div class="member-overlay">
+                            <div class="member-info">
+                                <h3>باسم</h3>
+                                <p>مصور فوتوغرافي</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <h3>باسم</h3>
+                        <span class="role">مصور فوتوغرافي</span>
+                        <p>مصور فوتوغرافي يتنقل بين الضيوف لالتقاط صور مميزة</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="photo/4.jpg" alt="عبدالخالق">
+                        <div class="member-overlay">
+                            <div class="member-info">
+                                <h3>عبدالخالق</h3>
+                                <p>مصور متحرك</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <h3>عبدالخالق</h3>
+                        <span class="role">مصور متحرك</span>
+                        <p>مصور متحرك لتصوير الحفل كاملاً بما في ذلك الزفة وغيرها</p>
+                    </div>
+                </div>                               
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="photo/8.jpg" alt="أيمن">
+                        <div class="member-overlay">
+                            <div class="member-info">
+                                <h3>أيمن</h3>
+                                <p>مدير الطاقم</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <h3>أيمن</h3>
+                        <span class="role">مدير الطاقم</span>
+                        <p>مدير الطاقم المسؤول عن تنظيم حركة التصوير ومراقبة الجودة وتصحيح الأخطاء</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title" id="gallery-title">معرض الأعمال</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="photo/3.jpg" alt="فرحة العمر">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>فرحة العمر</h3>
+                            <p>من أعمالنا توثيق أجمل لحظات حياتك لتراها في أي وقت</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="gallery-item">
+                    <img src="photo/10.jpg" alt="تصوير الزفة">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>تصوير الزفة</h3>
+                            <p>من البداية حتى الصعود على المسرح، توثيق كامل للزفة</p>
+                        </div>
+                    </div>
+                </div>                               
+            </div>
+        </div>
+    </section>
+
+    <section class="booking" id="booking">
+        <div class="container">
+            <h2 class="section-title" id="booking-title">احجز جلسة التصوير</h2>
+            
+            <div class="booking-container">
+                <div class="booking-form-container">
+                    <h3 class="form-title">املأ البيانات للحجز</h3>
+                    
+                    <form id="bookingForm">
+                        <div class="name-phone-row">
+                            <div class="form-group">
+                                <label for="name">
+                                    <i class="fas fa-user"></i>
+                                    الاسم الكامل
+                                </label>
+                                <input type="text" id="name" class="form-control" placeholder="أدخل اسمك الكامل" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">
+                                    <i class="fas fa-phone"></i>
+                                    رقم الجوال
+                                </label>
+                                <input type="tel" id="phone" class="form-control" placeholder="أدخل رقم الجوال" required>
+                            </div>
+                        </div>
+                        
+                        <div class="event-type-section">
+                            <h4><i class="fas fa-calendar-check"></i> نوع المناسبة</h4>
+                            <div class="event-options">
+                                <div class="event-option">
+                                    <input type="radio" id="wedding" name="eventType" value="عرس" required>
+                                    <label for="wedding">
+                                        <i class="fas fa-ring"></i>
+                                        <span>عرس</span>
+                                    </label>
+                                </div>
+                                
+                                <div class="event-option">
+                                    <input type="radio" id="hall" name="eventType" value="قاعة حفلات" required>
+                                    <label for="hall">
+                                        <i class="fas fa-glass-cheers"></i>
+                                        <span>قاعة حفلات</span>
+                                    </label>
+                                </div>
+                                
+                                <div class="event-option">
+                                    <input type="radio" id="other" name="eventType" value="مناسبة أخرى" required>
+                                    <label for="other">
+                                        <i class="fas fa-star"></i>
+                                        <span>مناسبة أخرى</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="shooting-type-section">
+                            <h4><i class="fas fa-video"></i> نوع التصوير</h4>
+                            <div class="shooting-options">
+                                <div class="shooting-option">
+                                    <input type="radio" id="live" name="shootingType" value="بث مباشر" required>
+                                    <label for="live">
+                                        <i class="fas fa-video"></i>
+                                        <span>بث مباشر</span>
+                                    </label>
+                                </div>
+                                
+                                <div class="shooting-option">
+                                    <input type="radio" id="normal" name="shootingType" value="عادي" required>
+                                    <label for="normal">
+                                        <i class="fas fa-camera"></i>
+                                        <span>عادي</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="eventDate">
+                                <i class="fas fa-calendar-alt"></i>
+                                تاريخ المناسبة
+                            </label>
+                            <input type="date" id="eventDate" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                مكان المناسبة
+                            </label>
+                            <input type="text" id="location" class="form-control" placeholder="أدخل مكان المناسبة" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i>
+                                تفاصيل إضافية (اختياري)
+                            </label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="أضف أي تفاصيل إضافية تريد إبلاغنا بها"></textarea>
+                        </div>
+                        
+                        <div class="booking-buttons">
+                            <button type="button" class="whatsapp-button" id="whatsappBtn">
+                                <i class="fab fa-whatsapp"></i>
+                                إرسال عبر واتساب
+                            </button>
+                            
+                            <button type="button" class="sms-button" id="smsBtn">
+                                <i class="fas fa-sms"></i>
+                                إرسال عبر الرسائل
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="booking-image">
+                    <div class="booking-img">
+                        <div class="features-header">
+                            <i class="fas fa-crown"></i>
+                            <h4>مميزات الحجز معنا</h4>
+                            <p class="features-subtitle">تجربة تصوير استثنائية</p>
+                        </div>
+                        
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <div class="icon-bg">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                    <span class="feature-number">01</span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>تأكيد فوري للحجز</h5>
+                                    <p>تأكيد حجزك خلال دقائق مع إشعار فوري عبر واتساب</p>
+                                </div>
+                                <div class="feature-glow"></div>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <div class="icon-bg">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <span class="feature-number">02</span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>فريق تصوير محترف</h5>
+                                    <p>طاقم متكامل من المصورين والمخرجين ذوي الخبرة</p>
+                                </div>
+                                <div class="feature-glow"></div>
+                            </div>
+                            
+                         
+                            
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <div class="icon-bg">
+                                        <i class="fas fa-headset"></i>
+                                    </div>
+                                    <span class="feature-number">04</span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>دعم فني 24/7</h5>
+                                    <p>دعم متواصل قبل وأثناء وبعد التصوير</p>
+                                </div>
+                                <div class="feature-glow"></div>
+                            </div>
+                        </div>
+                        
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>تواصل مع المدير</h3>
+                    <p>نحن نقدم خدمات تصوير احترافية تلبي أعلى معايير الجودة، لالتقاط أجمل اللحظات في مناسباتك الخاصة.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1Ppkp9h6uk/" class="social-link facebook-f" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/967736206408" class="social-link whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+967736206408" class="social-link phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                    <div class="social-links" style="margin-top: 15px;">
+                        <a href="https://youtube.com/@736206408" class="social-link youtube-1" target="_blank">    
+                            <i class="fab fa-youtube">1</i>
+                        </a>
+                        <a href="https://youtube.com/@smart77media" class="social-link youtube-1" target="_blank">    
+                            <i class="fab fa-youtube">2</i> 
+                        </a>
+                        <a href="https://youtube.com/@smart73media" class="social-link youtube-1" target="_blank">    
+                            <i class="fab fa-youtube">3</i> 
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>معلومات حول المطور</h3>                    
+                    <div class="contact-person-image">
+                        <img src="photo/5.jpg" alt="المطور" loading="lazy">
+                    </div>                   
+                    <div class="contact-cards">
+                        <a href="https://wa.me/736120731" class="contact-card whatsapp" target="_blank">
+                            <div class="card-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">واتساب</span>
+                                <span class="card-detail">731 120 738 967+</span>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                        </a>
+                        
+                        <a href="https://t.me/H220025" class="contact-card telegram" target="_blank">
+                            <div class="card-icon">
+                                <i class="fab fa-telegram"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">تليجرام</span>
+                                <span class="card-detail">H220025@</span>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+967738453912" class="contact-card phone">
+                            <div class="card-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">هاتف</span>
+                                <span class="card-detail">912 453 738 967+</span>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                        </a>
+                        
+                        <a href="mailto:halrb2588@gmail.com" class="contact-card email">
+                            <div class="card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">بريد إلكتروني</span>
+                                <span class="card-detail">halrb2588@gmail.com</span>
+                            </div>
+                            <div class="card-arrow">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2025 جميع الحقوق محفوظة | سمارت ميديا للتصوير والبث المباشر</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
